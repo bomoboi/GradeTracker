@@ -4,6 +4,7 @@ public class Grade {
   private char letterGrade;
   private String gradeType;
   private String gradeName;
+  private int gradeID;
 
   public Grade(double grade, String type, String name) {
     numGrade = grade;
@@ -31,14 +32,22 @@ public class Grade {
     return letterGrade;
   }
 
-  public String getType() {return gradeType};
+  public double getNumGrade() {return this.numGrade};
 
-  public String getName() {return gradeName};
+  public char getLetterGrade() {return this.letterGrade};
 
-  public void setGrade(double newGrade) {numGrade = newGrade;}
+  public String getType() {return this.gradeType};
 
-  public void setType(String newType) {gradeType = newType;}
+  public String getName() {return this.gradeName};
 
-  public void setName(String newName) {gradeName = newName;}
+  public int getID() {return this.gradeID};
+
+  public void setGrade(double newGrade) {this.numGrade = newGrade;}
+
+  public void setType(String newType) {this.gradeType = newType;}
+
+  public void setName(String newName) {this.gradeName = newName;}
+
+  public void setID(double newID) {this.gradeID = newID};
 
 }
